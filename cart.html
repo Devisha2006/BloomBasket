@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="cart.css"/>
+    <link rel="stylesheet" href="common.css"/>
+    <link rel="stylesheet" href="mobileview.css"/>
+</head>
+<body>
+    <div id="navbar">
+            <p id="logo">Bloom Basket</p>
+            <ul>
+                <li><a href="index.html"> Home </a></li>
+                <li><a href="plants.html">Plants</a></li>
+                <li><a href="pot.html"> Pots</a></li>
+                <li><a href="bird.html">Birds</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+    </div>
+
+    <h1>"Shopping Basket"</h1>
+
+    <div class="cart-table">
+        <table>
+            <thead>
+            <tr>
+                <th>Product</th>
+                <th>Name</th>
+                <th>Price</th>
+                <th>Quantity</th>
+                <th>Total</th>
+                <th>Remove</th>
+            </tr>
+            </thead>
+            <tbody id="cart-body"></tbody>
+        </table>
+    </div>
+    <div style="text-align: center; margin-top: 20px;" class="total-section">
+        <strong id="totalAmount">Total Amount:- 450/-</strong>
+        <br><br>
+        <button>Checkout</button>
+    </div>
+    <script src="cart.js"></script>
+</body>
+</html>

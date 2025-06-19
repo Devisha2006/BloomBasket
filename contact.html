@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Contact Us - BloomBasket</title>
+  <link rel="stylesheet" href="common.css"/>
+  <link rel="stylesheet" href="contact.css"/>
+  <link rel="stylesheet" href="mobileview.css"/>
+</head>
+<body>
+    <div id="navbar">
+            <p id="logo">Bloom Basket</p>
+            <ul>
+                <li><a href="index.html"> Home </a></li>
+                <li><a href="plants.html">Plants</a></li>
+                <li><a href="pot.html"> Pots</a></li>
+                <li><a href="bird.html">Birds</a></li>
+                <li><a href="cart.html">Cart</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+    </div>
+  <div class="container">
+    <h2>Contact Us 🌿</h2>
+    
+    <form id="contactForm">
+      <label for="name">Your Name</label>
+      <input type="text" id="name" required />
+
+      <label for="email">Your Email</label>
+      <input type="email" id="email" required />
+
+      <label for="message">Your Message</label>
+      <textarea id="message" rows="5" required></textarea>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <div class="info">
+      <h3>📞 Contact Info:</h3>
+      <p><strong>Phone:</strong> +91 98765 43210</p>
+      <p><strong>Email:</strong> support@bloombasket.in</p>
+      <p><strong>Address:</strong> 123 Green Street, Ahmedabad, Gujarat</p>
+
+      <div class="social">
+        <p>Connect with us:</p>
+        <a href="#">Instagram</a>
+        <a href="#">Facebook</a>
+        <a href="#">WhatsApp</a>
+      </div>
+    </div>
+  </div>
+
+  <script>
+    const form = document.getElementById("contactForm");    
+    form.addEventListener('submit',function(e){
+        e.preventDefault();
+        alert("MESSAGE SENT SUCCRSSFULLY!");
+        form.reset();
+    });
+  </script>
+</body>
+</html>
